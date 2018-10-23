@@ -1,4 +1,4 @@
-package com.timeismoney;
+package com.timeismoney.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
