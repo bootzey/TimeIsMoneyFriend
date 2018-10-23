@@ -10,7 +10,7 @@ import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 @Entity
-public class shifts {
+public class Shifts {
 	
 	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
 	private int id;
