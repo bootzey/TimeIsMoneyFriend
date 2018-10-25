@@ -4,7 +4,7 @@
 
     <head>
 
-        <title>Login page</title>
+        <title>Register</title>
 
         <meta charset="utf-8" />
 
@@ -14,13 +14,9 @@
 
     <body>
 
-        <h1>Login page</h1>
+        <h1>Register</h1>
 
-        <p>Example user: user / 1234</p>
-
-        <p th:if="${loginError}" class="error">Wrong user or password</p>
-
-        <form th:action="@{/login}" method="post">
+        <form th:action="@{/register}" method="post">
 
             <label for="username">Username</label>:
 
@@ -30,10 +26,9 @@
 
             <input type="password" id="password" name="password" /> <br />
 
-            <input type="submit" value="Log in" />
+            <input type="submit" value="Register" />
 
         </form>
-        <p>Not registered?  <a href="/register">Register Here</a></p>
 
         <p><a href="/index" th:href="@{/index}">Back to home page</a></p>
 

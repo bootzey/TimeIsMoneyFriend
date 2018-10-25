@@ -23,7 +23,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		
 		http
 				.authorizeRequests()
-					.antMatchers("/css/**", "/index").permitAll()
+					.antMatchers("/css/**", "/index","/").permitAll()
 					.antMatchers("/user/**").hasRole("USER")
 					.and()
 				.formLogin().loginPage("/login").failureUrl("/login-error");
@@ -34,8 +34,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	public void configure(AuthenticationManagerBuilder auth) throws Exception {
 
 		auth.authenticationProvider(authenticationProvider());
-//			.inMemoryAuthentication()
-//				.withUser(User.withDefaultPasswordEncoder().username("user").password("pass").roles("USER"));
 	}
 	
 	@Bean
