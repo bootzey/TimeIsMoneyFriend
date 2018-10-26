@@ -4,11 +4,9 @@
 
     <head>
 
-        <title>Hello Spring Security</title>
+        <title>Time Is Money Labor Tracking Service</title>
 
         <meta charset="utf-8" />
-
-        <link rel="stylesheet" href="/css/main.css" th:href="@{/css/main.css}" />
 
     </head>
 
@@ -21,8 +19,7 @@
             Roles: <span sec:authentication="principal.authorities"></span>
 
             <div>
-            
-
+          
                 <form action="#" th:action="@{/logout}" method="post">
 
                     <input type="submit" value="Logout" />
