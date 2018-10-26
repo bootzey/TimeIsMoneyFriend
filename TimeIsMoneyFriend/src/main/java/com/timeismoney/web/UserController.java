@@ -15,34 +15,10 @@ import com.timeismoney.repositories.UserRepository;
 
 
 @Controller
-public class TimeIsMoneyController {
+public class UserController {
 	
 	@Autowired
 	private UserRepository userRepository;
-	
-	@RequestMapping(value="/index", method=RequestMethod.GET)
-	public String getHome() {
-		
-		return "index";
-	}
-
-	@RequestMapping("/login")
-
-	public String login() {
-
-		return "login";
-
-	}
-
-	@RequestMapping("/login-error")
-
-	public String loginError(Model model) {
-
-		model.addAttribute("loginError", true);
-
-		return "login";
-
-	}
 	
 	@RequestMapping("/user/index")
 
