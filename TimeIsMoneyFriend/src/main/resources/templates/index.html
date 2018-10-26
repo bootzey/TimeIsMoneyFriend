@@ -5,13 +5,13 @@
     <head>
 
         <title>Time Is Money Labor Tracking Service</title>
-
         <meta charset="utf-8" />
+        <link href="../static/css/layout.css" th:href="@{/css/layout.css}" rel="stylesheet">
 
     </head>
 
     <body>
-
+		<div id="wrapper">
         <div th:fragment="logout" class="logout" sec:authorize="isAuthenticated()">
 
             Logged in user: <span sec:authentication="name"></span> |
@@ -39,7 +39,7 @@
             <li>Go to the <a href="/user/index" th:href="@{/user/index}">secured pages</a></li>
 
         </ul>
-
+		</div>
     </body>
 
 </html>

@@ -8,17 +8,18 @@
 
         <meta charset="utf-8" />
 
-        <link rel="stylesheet" href="/css/main.css" th:href="@{/css/main.css}" />
+        <link href="../../static/css/layout.css" th:href="@{/css/layout.css}" rel="stylesheet">
 
     </head>
 
     <body>
+    	<div id="wrapper">
         <div th:replace="index::logout"></div>
 
         <h1>This is a secured page!</h1>
 
         <p><a href="/index" th:href="@{/index}">Back to home page</a></p>
-
+		</div>
     </body>
 
 </html>

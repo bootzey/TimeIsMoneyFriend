@@ -5,9 +5,11 @@
     <head>
         <title>Login</title>
         <meta charset="utf-8" />
+        <link href="../static/css/layout.css" th:href="@{/css/layout.css}" rel="stylesheet">
 	</head>
 
     <body>
+    	<div id="wrapper">
         <h1>Login</h1>
         <p>Example user: user / 1234</p>
         <p th:if="${loginError}" class="error">Wrong user or password</p>
@@ -23,6 +25,7 @@
         </form>
         
         <p>Not registered?  <a href="/register">Register Here</a></p>
-        <p><a href="/index" th:href="@{/index}">Back to home page</a></p>   
+        <p><a href="/index" th:href="@{/index}">Back to home page</a></p> 
+        </div>  
     </body>
 </html>
