@@ -1,6 +1,23 @@
 @charset "ISO-8859-1";
 
-#wrapper {
+#login-wrapper {
 	width: 500px;
 	margin: 0px auto;
+	color:#01172F;
+	background-color:#D7FDEC;
+	text-align:center;
+}
+
+#login-wrapper h1 {
+	text-align: center;
+	color:#D7FDEC;
+	background-color:#01172F;
+}
+
+#login-wrapper a {
+	color:#7F95D1;
+}
+
+#login-wrapper p, form {
+	padding: 0px 15px 0px 15px;
 }
